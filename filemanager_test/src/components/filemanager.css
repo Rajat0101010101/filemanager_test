@@ -1,0 +1,185 @@
+body {
+    width: 99%;
+    height:99%;
+  
+  }
+  
+  .sidebar {
+      grid-area: sidebar;
+    }
+  
+  
+    .content {
+      grid-area: content;
+    }
+  
+    .header {
+      grid-area: header;
+    }
+  
+   
+    .wrapper {
+      background-color: #fff;
+      color: #444;
+    }
+  
+    .wrapper {
+      display: grid;
+      grid-gap: 0em;
+      grid-template-areas:
+       "header"
+       "sidebar"
+       "content"
+       "sidebar2"
+       "footer"
+    }
+  
+    @media only screen and (min-width: 1000px)  {
+    .wrapper {
+        grid-gap: 50px;
+      grid-template-columns: 50% auto;
+      grid-template-areas:
+      "header   header"
+      "sidebar  content"
+    }
+    }
+  
+    @media only screen and (min-width: 500px)   {
+      .wrapper {
+        grid-gap: 0px;
+        grid-template-columns: 250px auto 0px;
+        grid-template-areas:
+        "header  header  header"
+        "sidebar content sidebar2"
+        "footer  footer  footer";
+        max-width: 100%;
+      }
+    }
+  
+  .box {
+   
+    color: #fff;
+   
+    padding: 10px;
+  }
+  
+  .header,
+
+  .sidebar {
+    background-color: rgb(255, 255,255);
+    color: #444;
+  }
+ 
+
+
+ .uplodebutton{
+    float: right;
+    padding: 10px 20px 10px 20px;
+    margin-right: 30px;
+    font-size: medium;
+    background-color:rgb(128,78,230);
+    padding-top: 10px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 5px;
+ }
+
+
+ .filemanagertext{
+
+padding-left: 120px;  
+font-size: 30px;
+
+ }
+
+
+ .stealthtext{
+padding-left: 10px;
+    font-size: 30px;
+ }
+
+
+ .logo{
+
+    margin-left: 30px;
+ }
+
+.filemanagertext2{
+    font-size: 20px;
+    
+}
+
+.logo2{
+
+    height: 25px;
+    width: 25px;
+    padding-right: 15px;
+}
+
+.ff{
+align-items: center;
+justify-content: center;
+margin: auto;
+display: inline;
+background-color:#eef3fa;
+padding: 15px 60px 15px 15px ;
+
+}
+
+.yy{
+    color: black;
+}
+
+
+
+.container {
+    background-color:rgb(238, 243,250);
+    margin: auto;
+    width: 1100px;
+    height: 600px;
+    padding: 10px;
+    
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 5px;
+    }
+  }
+.flex-box{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    gap: 50px;
+}
+  
+  .imgf{
+    width: 40px;
+    height: 40px;
+  }
+  .imgd{
+    width: 20px;
+    height: 20px;
+  }
+
+
+  .zz{
+    font-size: 20px;
+    padding-left: 20px;
+  }
+
+
+  .ss {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  
